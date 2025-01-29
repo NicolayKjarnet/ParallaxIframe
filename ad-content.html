@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+    <link rel="stylesheet" href="ad-content.css" />
+    <script defer src="parallax.js"></script>
+  </head>
+  <body>
+    <div id="debug-overlay">
+      <div>Parent Scroll: <span id="parent-scroll">0</span>px</div>
+      <div>Elements Active: <span id="elements-active">0</span></div>
+    </div>
+
+    <div class="parallax-wrapper">
+      <div class="section">
+        <h1 class="header parallax-element" data-speed="0.5">First header inside ad</h1>
+        <img
+          id="img1"
+          class="image parallax-element"
+          data-speed="-0.2"
+          src="https://delivery-3.cavai.com/assets/creatives/general/cm6hshhi91imlbfj4cmkh07h0.png"
+          alt="Bilde 1"
+        />
+      </div>
+      <div class="section">
+        <h1 class="header parallax-element" data-speed="0.3">Second header inside ad</h1>
+        <img
+          id="img2"
+          class="image parallax-element"
+          data-speed="-0.4"
+          src="https://delivery-3.cavai.com/assets/creatives/general/cm6hshnk21iuzbyj42rzy4jq9.png"
+          alt="Bilde 2"
+        />
+        <img
+          id="img3"
+          class="image parallax-element"
+          data-speed="-0.6"
+          src="https://delivery-3.cavai.com/assets/creatives/general/cm6hshhi91imlbfj4cmkh07h0.png"
+          alt="Bilde 3"
+        />
+      </div>
+    </div>
+  </body>
+</html>
