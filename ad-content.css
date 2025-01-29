@@ -6,24 +6,25 @@
 
 html,
 body {
-  width: 100%;
+  width: 100vw;
   height: 2160px;
   background: #000;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 .parallax-wrapper {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   transform-style: preserve-3d;
 }
 
 .section {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 1080px;
   transform-style: preserve-3d;
 }
@@ -49,25 +50,27 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  justify-content: center;
 }
 
 .image {
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
 }
 
 #img1 {
-  width: 60%;
+  width: 60vw;
   top: 40%;
 }
 
 #img2 {
-  width: 70%;
+  width: 70vw;
   top: 30%;
 }
 
 #img3 {
-  width: 80%;
+  width: 80vw;
   top: 60%;
 }
 
