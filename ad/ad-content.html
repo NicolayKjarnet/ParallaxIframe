@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parallax</title>
-    <link rel="stylesheet" href="ad-content.css" />
-    <script defer src="parallax.js"></script>
+    <title>Parallax Ad</title>
+    <link rel="stylesheet" href="parallax.css" />
+    <script type="module" src="parallax.js"></script>
   </head>
   <body>
+    <!-- Debug overlay -->
     <div id="debug-overlay">
       <div>Parent Scroll: <span id="parent-scroll">0</span>px</div>
       <div>Elements Active: <span id="elements-active">0</span></div>
     </div>
 
+    <!-- Ad content -->
     <div class="parallax-wrapper">
       <div class="section">
         <h1 class="header parallax-element" data-speed="0.5">First header inside of ad</h1>

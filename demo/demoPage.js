@@ -1,16 +1,16 @@
-const scrollPosElement = document.getElementById("scroll-pos");
+const scrollPositionElement = document.getElementById("scroll-position");
 const adVisibilityElement = document.getElementById("ad-visibility");
 const adFrame = document.getElementById("parallax-ad");
 
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
+const isElementInViewport = (element) => {
+  const rect = element.getBoundingClientRect();
   return rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.bottom >= 0;
-}
+};
 
 window.addEventListener(
   "scroll",
   () => {
-    scrollPosElement.textContent = window.scrollY;
+    scrollPositionElement.textContent = window.scrollY;
     adVisibilityElement.textContent = isElementInViewport(adFrame) ? "Visible" : "Not visible";
 
     adFrame.contentWindow.postMessage(
